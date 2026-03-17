@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="play-store-assets/app_icon.PNG" alt="App Icon" width="96">
+  <img src="assets/images/readme-icon.png" alt="App Icon" width="120">
 </p>
 
 <h1 align="center">Schreinerei Kiwi</h1>
