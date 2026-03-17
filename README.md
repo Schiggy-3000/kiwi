@@ -1,50 +1,95 @@
-# Welcome to your Expo app 👋
+<img src="play-store-assets/feature_graphic.PNG" alt="Schreinerei Kiwi" width="100%">
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<br>
 
-## Get started
+<p align="center">
+  <img src="play-store-assets/app_icon.PNG" alt="App Icon" width="96">
+</p>
 
-1. Install dependencies
+<h1 align="center">Schreinerei Kiwi</h1>
 
-   ```bash
-   npm install
-   ```
+<p align="center">
+  Belege fotografieren — Daten automatisch erfassen — Jederzeit exportieren.
+</p>
 
-2. Start the app
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white" alt="Android">
+  <img src="https://img.shields.io/badge/Built%20with-Expo-000020?logo=expo&logoColor=white" alt="Expo">
+  <img src="https://img.shields.io/badge/AI-Gemini-4285F4?logo=google&logoColor=white" alt="Gemini">
+</p>
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## Screenshots
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+<p align="center">
+  <img src="play-store-assets/phone_screenshot_home.jpg" alt="Home" width="22%">
+  <img src="play-store-assets/phone_screenshot_belege_scannen.jpg" alt="Beleg scannen" width="22%">
+  <img src="play-store-assets/phone_screenshot_beleg_pruefen.jpg" alt="Beleg prüfen" width="22%">
+  <img src="play-store-assets/phone_screenshot_belege.jpg" alt="Belegliste" width="22%">
+</p>
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## Features
 
-When you're ready, run:
+- **Beleg scannen** — Kamera öffnen, Foto aufnehmen, fertig
+- **KI-Erkennung** — Datum, Geschäft, Betrag, MwSt und Zahlungsart werden automatisch ausgelesen (Google Gemini)
+- **Prüfen & Speichern** — Felder kontrollieren, anpassen, lokal speichern
+- **Belegliste** — Alle Belege auf einen Blick, bearbeitbar und löschbar
+- **CSV-Export** — Alle Belege als CSV exportieren und per E-Mail, Drive oder WhatsApp teilen
+
+---
+
+## Tech Stack
+
+| Layer | Technologie |
+|-------|-------------|
+| Framework | React Native + Expo (EAS Build) |
+| Navigation | Expo Router |
+| Datenbank | SQLite (`expo-sqlite`) |
+| KI / OCR | Google Gemini API (`gemini-2.5-flash`) |
+| Kamera | `expo-image-picker` |
+| Export | `expo-file-system` + `expo-sharing` |
+
+---
+
+## Setup
+
+### Voraussetzungen
+
+- [Node.js](https://nodejs.org) ≥ 18
+- [EAS CLI](https://docs.expo.dev/eas/) — `npm install -g eas-cli`
+- Google AI Studio API Key — [aistudio.google.com](https://aistudio.google.com)
+
+### Installation
 
 ```bash
-npm run reset-project
+git clone https://github.com/Schiggy-3000/kiwi.git
+cd kiwi
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Umgebungsvariablen
 
-## Learn more
+Erstelle eine `.env`-Datei im Projektverzeichnis:
 
-To learn more about developing your project with Expo, look at the following resources:
+```env
+EXPO_PUBLIC_GEMINI_API_KEY=dein_api_key_hier
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Entwicklungs-Build starten
 
-## Join the community
+```bash
+# Build erstellen (einmalig oder bei nativen Änderungen)
+eas build --profile development --platform android
 
-Join our community of developers creating universal apps.
+# Dev-Server starten
+npx expo start --dev-client
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+## Datenschutz
+
+Die App überträgt Belegfotos ausschliesslich zur Texterkennung an die Google Gemini API (HTTPS-verschlüsselt). Alle Belegdaten werden lokal auf dem Gerät gespeichert. Keine Konten, kein Tracking, keine Werbung.
