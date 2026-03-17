@@ -5,24 +5,24 @@
 
 import { Platform } from 'react-native';
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
+const tintColorLight = '#004e2a'; // Schreinerei Kiwi forest green
+const tintColorDark = '#bccf21';  // Schreinerei Kiwi lime (visible on dark bg)
 
 export const Colors = {
   light: {
-    text: '#11181C',
-    background: '#fff',
+    text: '#1c211f',
+    background: '#f5f5f0',
     tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
+    icon: '#4a5550',
+    tabIconDefault: '#4a5550',
     tabIconSelected: tintColorLight,
   },
   dark: {
-    text: '#ECEDEE',
-    background: '#151718',
+    text: '#e6e6de',
+    background: '#1c211f',
     tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
+    icon: '#a0a89e',
+    tabIconDefault: '#a0a89e',
     tabIconSelected: tintColorDark,
   },
 };

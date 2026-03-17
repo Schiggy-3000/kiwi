@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1024px;
+    height: 500px;
+    overflow: hidden;
+    background: #004e2a;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  .container {
+    width: 1024px;
+    height: 500px;
+    background: #004e2a;
+    display: flex;
+    align-items: center;
+    padding: 60px 80px;
+    gap: 60px;
+  }
+  .logo-wrap {
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+    background: rgba(255,255,255,0.10);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo-wrap img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+  }
+  .text {
+    flex: 1;
+    color: #fff;
+  }
+  .tagline {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #bccf21;
+    margin-bottom: 16px;
+  }
+  .title {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    color: #fff;
+  }
+  .subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.5;
+  }
+  .pill {
+    display: inline-block;
+    margin-top: 32px;
+    background: #bccf21;
+    color: #1c211f;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 32px;
+    border-radius: 100px;
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="logo-wrap">
+    <img src="../assets/images/kiwi-icon.png" alt="Kiwi Logo">
+  </div>
+  <div class="text">
+    <div class="tagline">Schreinerei</div>
+    <div class="title">Kiwi</div>
+    <div class="subtitle">Belege fotografieren.<br>Daten automatisch erfassen.<br>Jederzeit exportieren.</div>
+    <div class="pill">Beleg scannen</div>
+  </div>
+</div>
+</body>
+</html>
