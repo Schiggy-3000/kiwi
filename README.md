@@ -1,7 +1,3 @@
-<img src="play-store-assets/feature_graphic.PNG" alt="Schreinerei Kiwi" width="100%">
-
-<br>
-
 <p align="center">
   <img src="play-store-assets/app_icon.PNG" alt="App Icon" width="96">
 </p>
