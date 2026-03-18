@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "Schreinerei Kiwi",
+    "name": "kiwi",
     "slug": "schreinerei-kiwi",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/kiwi-icon.png",
     "scheme": "schreinereiKiwi",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true

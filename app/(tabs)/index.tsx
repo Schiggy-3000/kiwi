@@ -38,7 +38,7 @@ export default function HomeScreen() {
           contentFit="contain"
         />
         <ThemedText type="title" style={styles.title}>
-          Schreinerei Kiwi
+          kiwi
         </ThemedText>
         <View style={styles.buttonWrapper}>
           <ScanButton />
