@@ -2,7 +2,7 @@
   <img src="assets/images/readme-icon.png" alt="App Icon" width="120">
 </p>
 
-<h1 align="center">Schreinerei Kiwi</h1>
+<h1 align="center">kiwi</h1>
 
 <p align="center">
   Belege fotografieren — Daten automatisch erfassen — Jederzeit exportieren.
