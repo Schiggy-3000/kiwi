@@ -22,7 +22,9 @@
     "production": {
       "android": {
         "applicationId": "com.bisasam.schreinereiKiwi",
-        "track": "internal"
+        "track": "internal",
+        "releaseStatus": "draft",
+        "serviceAccountKeyPath": "./temp/gcp_service_account_private_key.json"
       }
     }
   }

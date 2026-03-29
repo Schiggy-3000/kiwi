@@ -3,6 +3,7 @@
 # Added by user
 temp/
 .claude/
+*.apk
 
 
 # dependencies
