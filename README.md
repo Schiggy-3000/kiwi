@@ -30,7 +30,7 @@
 ## Download
 
 <p align="center">
-  <a href="https://github.com/Schiggy-3000/kiwi/releases/latest/download/kiwi.apk">
+  <a href="https://github.com/Schiggy-3000/kiwi/releases/latest/download/prod_build.apk">
     <img src="https://img.shields.io/badge/Download-APK-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Download APK">
   </a>
 </p>
